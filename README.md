@@ -54,7 +54,7 @@ Once the json file is generated, you can import it as follows:
 
 
 2. Browse and select the generated model file and click Ok
-<img src="assets/importDatamodel.png" alt='import data model screenshot' >
+<img src="assets/importDatamodel.png" width="90%" height="90%" alt='import data model screenshot' >
 
 
 * 3. The data model will then be imported 
@@ -64,7 +64,7 @@ For newly imported data models, the datasource will most likely be invalid. Clic
 
 
 * 4. If the data source has not been created, you can always go to Identity/Tenant/Data Sources created one, save it, and then do 3. 
-<img src="assets/createDatasource.png" alt='Create datasource screenshot' >
+<img src="assets/createDatasource.png" width="90%" height="90%" alt='Create datasource screenshot' >
 
 
 ##  Other Notes
