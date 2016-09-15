@@ -73,7 +73,7 @@ Currently Activiti 1.5 supports 3 types String, Number, Date. All other database
 The generated model will also include views as well as tables
 
 
-*This is NOT an officially supported Alfresco product. For any questions, enhancements, or problem requests please raise a github issue in this project.* 
+*This is NOT an officially supported Alfresco product. For any questions, enhancements, or problems please raise a github issue in this project.* 
 
 
 ## License
