@@ -21,7 +21,7 @@ java -jar <path to jar>/ActivitiDataModelGenerator.jar
 
 When succesful, the utility will generate a <database name>.json file with the model definition.
 
-## <configuration>.properties files
+## &lt;configuration&gt;.properties files
 
 The generation of the json model is driven by properties files (with generator.properties file being the default file and unless you specify another one is expected to be in the working directory.
 A config properties files allows you to specify the following properties. 
@@ -57,14 +57,14 @@ Once the json file is generated, you can import it as follows:
 <img src="assets/importDatamodel.png" width="50%" height="50%" alt='import data model screenshot' >
 
 
-3. The data model will then be imported 
+3. The data model will then be imported.For newly imported data models, the datasource will most likely be invalid. Click on the *Data Model Editor*.  
 <img src="assets/sakila-imported-datamodel.png" alt='imported data model screenshot' >
-For newly imported data models, the datasource will most likely be invalid. Click on the Data Model Editor, select the datasource and save 
-<img src="assets/specify-datasource.png" alt='Specify datasource screenshot' >
+Select the datasource and then save 
+<img src="assets/specify-datasource.png" width="40%" height="40%"  alt='Specify datasource screenshot' >
 
 
-4. If the data source has not been created, you can always go to Identity/Tenant/Data Sources created one, save it, and then do 3. 
-<img src="assets/createDatasource.png" width="40%" height="40%" alt='Create datasource screenshot' >
+4. If the data source has not been created, you can always go to (Identity Mangement)/Tenant/Data Sources created one, save it, and then do 3. 
+<img src="assets/createDatasource.png" width="80%" height="80%" alt='Create datasource screenshot' >
 
 
 ##  Other Notes
