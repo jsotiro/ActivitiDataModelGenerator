@@ -49,22 +49,22 @@ Please ensure that the URL configures the connection to use the required databas
 
 Once the json file is generated, you can import it as follows:
 
-* 1. From the kickstarter app click on Data Models and then click *Import Data Model*
+1. From the kickstarter app click on Data Models and then click *Import Data Model*
 <img src="assets/DataModelsImport.png" alt='data models screenshot' >
 
 
 2. Browse and select the generated model file and click Ok
-<img src="assets/importDatamodel.png" width="90%" height="90%" alt='import data model screenshot' >
+<img src="assets/importDatamodel.png" width="50%" height="50%" alt='import data model screenshot' >
 
 
-* 3. The data model will then be imported 
+3. The data model will then be imported 
 <img src="assets/sakila-imported-datamodel.png" alt='imported data model screenshot' >
 For newly imported data models, the datasource will most likely be invalid. Click on the Data Model Editor, select the datasource and save 
 <img src="assets/specify-datasource.png" alt='Specify datasource screenshot' >
 
 
-* 4. If the data source has not been created, you can always go to Identity/Tenant/Data Sources created one, save it, and then do 3. 
-<img src="assets/createDatasource.png" width="90%" height="90%" alt='Create datasource screenshot' >
+4. If the data source has not been created, you can always go to Identity/Tenant/Data Sources created one, save it, and then do 3. 
+<img src="assets/createDatasource.png" width="40%" height="40%" alt='Create datasource screenshot' >
 
 
 ##  Other Notes
