@@ -49,8 +49,9 @@ Please ensure that the URL configures the connection to use the required databas
 
 Once the json file is generated import it as follows
 1. From the kickstarter app click on Data Models and then imporr
-
+<img src="assets/DataModelsImport.png" alt='data models screenshot' >
 2. Select the file you need and click Ok
+
 3. The data model is imported but the datasource will most likely be invalid. Click on the Data Model Editor, select the datasource and save 
 
 4. If the data source has not been created, you can always go to Identity/Tenant/Data Sources created one, save it, and then do 3. 
