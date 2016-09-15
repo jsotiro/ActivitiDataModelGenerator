@@ -59,12 +59,15 @@ Once the json file is generated, you can import it as follows:
 
 3. The data model will then be imported.For newly imported data models, the datasource will most likely be invalid. Click on the *Data Model Editor*.  
 <img src="assets/sakila-imported-datamodel.png" alt='imported data model screenshot' >
-Select the datasource and then save 
-<img src="assets/specify-datasource.png" width="40%" height="40%"  alt='Specify datasource screenshot' >
 
+
+Select the datasource and then save 
+
+
+<img src="assets/specify-datasource.png" width="50%" height="50%"  alt='Specify datasource screenshot' >
 
 4. If the data source has not been created, you can always go to (Identity Mangement)/Tenant/Data Sources created one, save it, and then do 3. 
-<img src="assets/createDatasource.png" width="80%" height="80%" alt='Create datasource screenshot' >
+<img src="assets/createDatasource.png" width="100%" height="100%" alt='Create datasource screenshot' >
 
 
 ##  Other Notes
