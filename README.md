@@ -1,6 +1,6 @@
 <h1 align="center">Activiti Data Model Generator CLI utility</h1>
 
->Utility to generate Activity BPM data models from RDBMs databases
+>Utility to generate Activity BPM data models from RDBM databases
 
 Activiti BPM Enterprise Suite recently introduced in 1.5 the ability to map database tables as entity models that can then be bound to forms, UIs, process, expressions and updated via a Store Entity task. 
 
@@ -64,7 +64,7 @@ Select the datasource and then save
 
 <img src="assets/specify-datasource.png" width="40%" height="40%"  alt='Specify datasource screenshot' >
 
-* If the data source has not been created, you can always go to (Identity Mangement)/Tenant/Data Sources created one, save it, and then do the previous step. 
+* If the data source has not been created, you can always go to *(Identity Mangement)/Tenant/Data Sources*, create one and save it, and then do the previous step. 
 <img src="assets/createDatasource.png" width="100%" height="100%" alt='Create datasource screenshot' >
 
 
