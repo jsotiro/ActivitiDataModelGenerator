@@ -7,21 +7,20 @@ Activiti BPM Enterprise Suite recently introduced in 1.5 the ability to map data
 This command line utility allows you to overcome the tedious task of entering data model details. Instead it uses a jdbc connection to the source database and generates the json model to import in Activiti ES 1.5
 ##  How to use the ActivitiDataModelGenerator utility:
 You can either download the source code and use it from your development environment or run the pre-compiled jar and the associated generator.properties file.
-
+The jar file contains all dependencies, including the jdbc drivers for MySQL, Postgress, SQLLite, H2, MS SQL, Oracle. You need to adjust the sample generator.properties file to your requirements and either 
+- save it to your working directory (i.e. where you execute the jar from)
+- or specify it as a parameter 
 
 ```bash
 ``` java -jar <path to jar>/ActivitiDataModelGenerator.jar
-```
+``` java -jar <path to jar>/ActivitiDataModelGenerator.jar <optional path>/<custom settings>.properties 
+``` e.g java -jar <path to jar>/ActivitiDataModelGenerator.jar ./sakila.properties 
+``` 
 
-The jar file contains all dependencies, including the jdbc drivers for MySQL, Postgress, SQLLite, H2, MS SQL, Oracle. You need to adjust the generator.properties file to your requirements and save it to your working directory (i.e. where you execute the jar from)
+## <configuration>.properties files
 
-
-## Configuring the generator.properties file
-
-The generation of the json model is driven by the generator.properties file. The file is expected to be in the working directory and allows you to specify the following properties. For MySQL, all you have to do is change the url to point to your database and supply the correct user name and password. For other RDBMS you need to specificy the driver class. 
-The utility uses SELECT statements based on the sql template, to get metadata. 
-The active one "sql=select * from %s limit 1
-" will work for MySQL For Oracle, MSQL Acess 
+The generation of the json model is driven by properties files (with generator.properties file being the default file and unless you specify another one is expected to be in the working directory.
+A config properties files allows you to specify the following properties. 
 
 ```importer.properties
 driver=com.mysql.jdbc.Driver
@@ -36,19 +35,26 @@ sql=select * from %s limit 1
 #sql=select TOP 1 * from {%s}
 ```
 
-##  Generate a model
+For MySQL, all you have to do is change the url to point to your database and supply the correct user name and password. For other RDBMS you need to specificy the driver class. 
+The utility uses SELECT statements based on the sql template, to get metadata. 
+The active one "sql=select * from %s limit 1
+" will work for MySQL For Oracle, MSQL Acess 
 
 ##  Import the generated model in Activiti
 
+Once the json file is generated import it as follows
 
-First, move in the folder where you want create your project.
+1. Import Model
+2. Edit 
+3. Ensure Data source
+4. Save 
 
-```bash
-yo ng2-alfresco-component
-```
+##  Other Notes
+Currently Activiti 1.5 supports 3 types String, Number, Date. All other database custom types are mapped as String to allow successful generation and import.
+The generated model will also include views as well as tables
+This is NOT an officially supported Alfresco product. For any questions, enhancements, or problem requests please raise a git hub issue. 
 
-<img src="assets/generator.png" alt='alfresco generator' >
 
 ## License
-[MIT](ponent/blob/master/LICENSE)
+[Apache 2](ActivitiDataModelGenerator/blob/master/LICENSE)
  
