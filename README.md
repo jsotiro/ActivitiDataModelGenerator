@@ -47,14 +47,25 @@ Please ensure that the URL configures the connection to use the required databas
 
 ##  Import the generated model in Activiti
 
-Once the json file is generated import it as follows
-1. From the kickstarter app click on Data Models and then imporr
+Once the json file is generated, you can import it as follows:
+
+* 1. From the kickstarter app click on Data Models and then click *Import Data Model*
 <img src="assets/DataModelsImport.png" alt='data models screenshot' >
-2. Select the file you need and click Ok
 
-3. The data model is imported but the datasource will most likely be invalid. Click on the Data Model Editor, select the datasource and save 
 
-4. If the data source has not been created, you can always go to Identity/Tenant/Data Sources created one, save it, and then do 3. 
+2. Browse and select the generated model file and click Ok
+<img src="assets/importDatamodel.png" alt='import data model screenshot' >
+
+
+* 3. The data model will then be imported 
+<img src="assets/sakila-imported-datamodel.png" alt='imported data model screenshot' >
+For newly imported data models, the datasource will most likely be invalid. Click on the Data Model Editor, select the datasource and save 
+<img src="assets/specify-datasource.png" alt='Specify datasource screenshot' >
+
+
+* 4. If the data source has not been created, you can always go to Identity/Tenant/Data Sources created one, save it, and then do 3. 
+<img src="assets/createDatasource.png" alt='Create datasource screenshot' >
+
 
 ##  Other Notes
 Currently Activiti 1.5 supports 3 types String, Number, Date. All other database custom types are mapped as String to allow successful generation and import.
