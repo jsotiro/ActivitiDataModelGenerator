@@ -81,8 +81,8 @@ The MS SQL JDBC Driver is not available on maven repos and the project will not 
 * download from https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774
 * install locally  with 
 
-mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
-
+``` mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
+```
 * rebuild
 
 
