@@ -75,7 +75,14 @@ The generated model will also include views as well as tables
 
 *This is NOT an officially supported Alfresco product. For any questions, enhancements, or problems please raise a github issue in this project.* 
 
-
+##  Building for MS SQL Server
+    
+MS SQL JDBC Driver not available on maven repos and the . either comment out  the dependency or
+1. download from https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774
+2. install locally  with 
+```mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
+```
+3. rebuild
 ## License
 [Apache 2](https://raw.githubusercontent.com/jsotiro/ActivitiDataModelGenerator/master/LICENSE)
  
